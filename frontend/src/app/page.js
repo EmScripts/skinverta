@@ -1,20 +1,26 @@
 // app/page.js
-import Head from 'next/head';
+
 import styles from './globals.css';
+// pages/index.js
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Features from '../components/Features';
+import PopularProducts from '../components/PopularProducts';
+import Testimonials from '../components/Testimonials';
+import Footer from '../components/Footer';
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>SkinVerta</title>
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to SkinVerta</h1>
-        <p className={styles.description}>
-          Your go-to skincare comparison platform!
-        </p>
-      </main>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Features />
+      <PopularProducts />
+      <Testimonials />
+      <Footer />
+    </>
   );
-}
+};
+
+export default HomePage;
+

@@ -7,6 +7,23 @@
   --foreground: #171717;
 }
 
+/* styles/fonts.css */
+@font-face {
+  font-family: 'Ivy Mode';
+  src: url('./fonts/IvyMode-Regular.woff') format('woff2'),
+       url('./fonts/IvyMode-Regular.woff2') format('woff');
+  font-weight: 100 900; /* Adjust weights as necessary */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('./fonts/Aileron-Regular.woff2') format('woff2'),
+       url('./fonts/Aileron-Regular.woff') format('woff');
+  font-weight: 100 900; /* Adjust weights as necessary */
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -33,9 +50,6 @@ body {
   text-align: center;
 }
 
-.main {
-  font-family: Arial, sans-serif;
-}
 
 .title {
   color: #4CAF50;
